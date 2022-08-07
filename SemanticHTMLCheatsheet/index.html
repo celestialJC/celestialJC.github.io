@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheat Sheet for Semantic HTML</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+
+        <!--Navigation Menu-->
+        <nav class="navbar">
+            <ul>
+              <li><a href="#SemanticElements">Semantic Elements</a></li>
+              <li><a href="#EmbeddingMedia">Embedding Media</a></li>
+              <li><a href="#FigureandFigcaption">&lt;figure&gt; and &lt;figcaption&gt;</a></li>
+              <li><a href="#SectionandArticle">&lt;section&gt; and &lt;article&gt;</a></li>
+              <li><a href="#AsideElement">Aside Element</a></li>
+            </ul>
+          </nav>
+
+        <h1 class="title">Semantic HTML</h1>
+          <p class="intro">Semantic HTML introduces meaning to the code we write. 
+            Before Semantic HTML the elements didn't have any meaning 
+            as to what it does or what content goes in it. An element 
+            such as &lt;div&gt; was used as a general-purpose element to
+            create things from headers to footers to articles. 
+            With Semantic HTML we were introduced to elements 
+            that tell developers and browsers exactly what it does
+            and what content should go in it.</p>
+    </header>
+
+    <main>
+        <div class="container">
+        <!--Semantic Elements Table-->
+        
+          <table>
+            <thead>
+                <tr>
+                    <th id="SemanticElements" class="heading" colspan="2"><h1>Semantic Elements</h1></th>
+                </tr>
+                <tr>
+                    <th><h2>Tag</h2></th>
+                    <th><h2>Description</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element"><h3>&lt;header&gt;</h3></td>
+                    <td class="description"><h3>&lt;header&gt; describes the content at the top of the page &lt;body&gt;.
+                         It may include a logo, navigational links or a search bar. </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;nav&gt;</h3></td>
+                    <td class="description"><h3>&lt;nav&gt; encapsulates the page's navigational links. It is often placed
+                         inside the &lt;header&gt; or &lt;footer&gt;. </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;main&gt;</h3></td>
+                    <td class="description"><h3>&lt;main&gt; encapsulates the main content of a page between the
+                         header/navigation and the footer areas. </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;footer&gt;</h3></td>
+                    <td class="description"><h3>&lt;footer&gt; includes the page’s footer content at the bottom of the
+                         &lt;body&gt;. </h3></td>
+                </tr>
+                
+            </tbody>
+          </table>
+
+          <!--Embedding Media Table-->
+
+          <table >
+            <thead>
+                <tr>
+                    <th id="EmbeddingMedia" class="heading" colspan="2"><h1>Embedding Media</h1></th>
+                </tr>
+                <tr>
+                    <th><h2>Tag</h2></th>
+                    <th><h2>Description</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element"><h3>&lt;video&gt;</h3></td>
+                    <td class="description"><h3>&lt;video&gt; allows us to add videos to our 
+                        website. &lt;video&gt; requires a closing tag. 
+                        These elements are universal in that they all use the src 
+                        attribute to link the source of the content. </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;audio&gt;</h3></td>
+                    <td class="description"><h3>&lt;audio&gt; allows us to implement audio into our website. 
+                        &lt;audio&gt; requires a closing tag. 
+                        These elements are universal in that they all use the src 
+                        attribute to link the source of the content. </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;embed&gt;</h3></td>
+                    <td class="description"><h3>&lt;embed&gt; can be used to implement any type of media. 
+                        &lt;embed&gt; is a self-closing tag. 
+                        These elements are universal in that they all use the src 
+                        attribute to link the source of the content. 
+                    </h3></td>
+                </tr>                              
+            </tbody>
+          </table>
+
+          <!--Figure and Figcaption Table-->
+
+          
+          <table>
+            <thead>
+                <tr>
+                    <th id="FigureandFigcaption" class="heading" colspan="2"><h1>&lt;figure&gt; and &lt;figcaption&gt;</h1></th>
+                </tr>
+                <tr>
+                    <th><h2>Tag</h2></th>
+                    <th><h2>Description</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element"><h3>&lt;figure&gt;</h3></td>
+                    <td class="description"><h3>The &lt;figure&gt; element is used to encapsulate 
+                        media such as an image, diagram. or code snippet.  </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;figcaption&gt;</h3></td>
+                    <td class="description"><h3>The &lt;figcaption&gt; element is used to describe the 
+                        media encapsulated within the &lt;figure&gt; element. Developers 
+                        will normally use &lt;figcaption&gt; within the &lt;figure&gt; element 
+                        to group the media and description. This way, if a developer 
+                        decides to change the position of the media, the description 
+                        will follow along with it. </h3></td>
+                </tr>                            
+            </tbody>
+          </table>
+
+          <!--Section and Artcle Table-->
+
+          <table>
+            <thead>
+                <tr>
+                    <th id="SectionandArticle" class="heading" colspan="2"><h1>&lt;section&gt; and &lt;article&gt;</h1></th>
+                </tr>
+                <tr>
+                    <th><h2>Tag</h2></th>
+                    <th><h2>Description</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element"><h3>&lt;section&gt;</h3></td>
+                    <td class="description"><h3>&lt;section&gt; defines elements in a document, 
+                        such as chapters, headings, or any other area 
+                        of the document with the same theme. Generally 
+                        developers will use &lt;section&gt; to define a theme 
+                        for the webpage and use &lt;article&gt; to write 
+                        independent content for that theme. This does 
+                        not mean that &lt;article&gt; has to be used with &lt;section&gt;. </h3></td>
+                </tr>
+                
+                <tr>
+                    <td class="element"><h3>&lt;article&gt;</h3></td>
+                    <td class="description"><h3>&lt;article&gt; holds content that makes sense on 
+                        its own such as articles, blogs, and comments. 
+                        Generally developers will use &lt;section&gt; to define a theme 
+                        for the webpage and use &lt;article&gt; to write 
+                        independent content for that theme. This does 
+                        not mean that &lt;article&gt; has to be used with &lt;section&gt;. </h3></td>
+                </tr>                            
+            </tbody>
+          </table>
+
+          <!--Aside Element Table-->
+
+          <table>
+            <thead>
+                <tr>
+                    <th id="AsideElement" class="heading" colspan="2"><h1>Aside Element</h1></th>
+                </tr>
+                <tr>
+                    <th><h2>Tag</h2></th>
+                    <th><h2>Description</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element"><h3>&lt;aside&gt;</h3></td>
+                    <td class="description"><h3>The &lt;aside&gt; element is 
+                        used to mark additional information that can enhance 
+                        another element but isn't required in order to 
+                        understand the main content. Usually, this information 
+                        would be in a sidebar or a location where it doesn't 
+                        obstruct the main piece of content. An example of this 
+                        would be an article that discusses how to take care of 
+                        a dog and next to the article an ad would appear 
+                        advertising a dog grooming product. </h3></td>
+                </tr>
+                              
+            </tbody>
+          </table>
+        </div>
+
+    </main>
+    <footer></footer>
+  </body>
+</html>
