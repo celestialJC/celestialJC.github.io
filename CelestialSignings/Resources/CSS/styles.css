@@ -1,0 +1,308 @@
+/* Universal Elements */
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h1 {
+    Font-Size: 1.5rem;
+    Font-Family: 'Merriweather', Serif; 
+    color: hsl(26, 86%, 47%);
+    text-shadow: 1px 1px #181E34;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    Font-Family: 'Merriweather', Serif; 
+    color: hsl(26, 86%, 55%);
+    text-shadow: 1px 1px #181E34;
+}
+
+h3 {
+    Font-Family: 'Muli', Sans-Serif;
+    Font-Size: 1.5rem;
+    text-align: center;
+    color: hsl(228, 36%, 39%);
+    padding-bottom: 1rem;
+}
+
+h4 {
+    Font-Family: 'Muli', Sans-Serif;
+    Font-Size: 1rem;
+    text-align: center;
+    color: hsl(227, 36%, 14%);
+    opacity: 0.9;
+    padding-bottom: 1rem;
+}
+
+span {
+    color: white;
+    font-size: 0.5rem;
+    padding: 1rem;
+    Font-Family: 'Merriweather', Serif;
+}
+
+.main-content {
+    margin-top: 4.25rem;    
+    position: relative;
+    display: block;
+       
+    
+}
+
+.content-center {
+    padding: 2rem 2rem;
+}
+
+.image-container img {
+    height: 10rem;
+    width: 16rem;
+}
+
+.content {
+    text-align: center;
+}
+/* Navigation Section */
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.desktop-logo {
+    padding-left: 1rem;
+}
+
+
+.desktop-logo a {
+    text-decoration: none;
+    color: hsl(227, 36%, 14%);
+    font-size: 1.5rem;
+    Font-Family: 'Merriweather', Serif;
+    
+}
+
+
+.desktop {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.desktop ul {
+    padding: 0.5rem;
+    list-style-type: none;
+    Font-Family: 'Muli', Sans-Serif;
+    font-size: 1rem;    
+    display: flex;
+    font-weight: bold;
+    color: hsl(227, 36%, 14%);
+    
+}
+
+.desktop a {
+    text-decoration: none;
+    color: hsl(227, 36%, 14%);
+    padding: 1rem 1rem 1rem 1rem;
+    
+}
+
+/* unvisited link */
+.desktop a:link {
+    color: hsl(228, 36%, 39%)
+}
+
+/* visited link */
+.desktop  a:visited {
+    color: hsl(227, 36%, 14%)
+}
+
+/* mouse over link */
+.desktop a:hover {
+    color: hsl(26.98,86.67%,38.24%);
+}
+
+/* selected link */
+.desktop a:active {
+    color: #800000;
+}
+
+
+
+.desktop li {
+    color: hsl(227, 36%, 14%);
+}
+
+.desktop li .button {
+    color: white;
+    background-color: hsl(228, 36%, 39%);
+    border: 1px solid hsl(26, 86%, 55%);
+    border-radius: 0.25rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .desktop-logo a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop {
+        display: none;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .signing figure figcaption h4 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .desktop a {
+        font-size: 0.45rem;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .desktop a {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mission Section */
+
+#mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Images/Feathers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+    margin: auto auto;
+    
+}
+
+.mission-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    width: 30rem;
+    border: 0.33rem solid hsl(26, 86%, 55%);
+    box-shadow:
+    inset 0 0 0 0.15rem hsl(227, 36%, 14%);
+    position: static;
+}
+
+#types-of-signings {
+    display: flex;
+    height: auto;
+    position: relative;
+    margin: auto auto; 
+}
+
+.signings-container {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    overflow: hidden;
+    flex-flow: row wrap;
+}
+
+.signing {
+    
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signing figure figcaption {
+    text-align: center;
+}
+
+#notary-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(26, 86%, 55%);
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto auto;
+    padding-bottom: 1.5rem;
+}
+
+.notary-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+
+
+.notary-image-container img {
+    width: 9rem;
+    height: 12rem;
+}
+
+
+#notary-section h2 {
+    color: white;
+    text-shadow: 2px 1px hsl(227, 36%, 14%);
+}
+
+#notary-section h3 {
+    color:hsl(227, 36%, 14%);
+    text-shadow: 1px 1px white;
+    padding: 0 0 0;
+}
+
+
+
+#contact-information-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto auto;
+    
+}
+
+#contact-information-section h3 {
+    color:hsl(227, 36%, 14%);
+    opacity: 0.8;
+    padding: 0 0 0;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:  hsl(228, 36%, 39%);
+    padding: 0.8rem ;
+
+}
+
